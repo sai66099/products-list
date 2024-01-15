@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products Layout</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="input-container">
+      <div>
+        <p class="plp-para">PLP</p>
+        <input type="text" placeholder="Type something to search" data-search />
+        <button onclick="onClickGrid()">list view</button>
+        <button onclick="onClickList()">grid view</button>
+      </div>
+    </div>
+
+    <div class="card-container" data-card-container></div>
+    <template data-product-template>
+      <div class="card">
+        <div class="img-container">
+          <div class="img-class">
+            <p class="info-tag" data-info-tag></p>
+            <img
+              src="https://img.freepik.com/free-vector/seasonal-sale-discounts-presents-purchase-visiting-boutiques-luxury-shopping-price-reduction-promotional-coupons-special-holiday-offers-vector-isolated-concept-metaphor-illustration_335657-2766.jpg?w=360"
+              alt="image"
+              class="image"
+            />
+          </div>
+        </div>
+        <div class="product-details-container">
+          <div>
+            <h1 data-heading></h1>
+            <p class="info" data-additional-info-1></p>
+            <p class="info" data-additional-info-2></p>
+            <p class="info" data-additional-info-3></p>
+          </div>
+        </div>
+      </div>
+    </template>
+  </body>
+</html>
